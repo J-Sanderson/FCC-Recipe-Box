@@ -6,9 +6,9 @@ const RecipeList = (props) => {
 
     const rows = props.recipes?.length
         ? (
-            props.recipes.map(recipe => {
+            props.recipes.map((recipe, index) => {
                 return (
-                    <Recipe name={recipe.name} ingredients={recipe.ingredients} />
+                    <Recipe key={index} name={recipe.name} ingredients={recipe.ingredients} />
                 )
             })
         ) : (
