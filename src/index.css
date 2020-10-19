@@ -1,6 +1,8 @@
 :root {
   --nearwhite:#F5F1EB;
   --red:#C92023;
+  --lighter: #F1AAAB;
+  --lightest: #F8D6D7;
 }
 
 body {
@@ -39,4 +41,32 @@ button {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   margin: 0.5rem auto;
+}
+
+.recipe-title {
+  margin: 0px;
+  border: 1px solid var(--nearwhite);
+  padding: 5px 5px 5px 20px;
+  font-family: 'Reenie Beanie', cursive;
+  background-color: var(--red);
+  color: var(--nearwhite);
+  font-size: 2rem;
+}
+
+.ingredients {
+  margin-top: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.ingredients li {
+  padding: 5px 20px;
+}
+
+.ingredients li:nth-child(even) {
+  background-color: var(--lightest);
+}
+
+.ingredients li:nth-child(odd) {
+  background-color: var(--lighter);
 }
