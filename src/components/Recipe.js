@@ -30,7 +30,11 @@ class Recipe extends Component {
                     <h2>{this.props.name}</h2>
                     <button onClick={this.toggleDisplay}>Show</button>
                 </div>
-                <ul className="ingredients">{ingredients}</ul>
+                { 
+                    this.state.show
+                    ? <div><ul className="ingredients">{ingredients}</ul></div>
+                    : null
+                }
             </div>
         );
     };
