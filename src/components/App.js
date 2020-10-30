@@ -40,7 +40,7 @@ class App extends Component {
         <RecipeList recipes={this.state.recipes} />
         <button 
           id="add-recipe" 
-          className="add-recipe"
+          className="add-recipe-button"
           onClick={this.toggleAdd}
         >
             Add Recipe

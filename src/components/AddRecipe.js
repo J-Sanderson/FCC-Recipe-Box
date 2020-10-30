@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import '../css/AddRecipe.css';
+
 class AddRecipe extends Component {
     render(){
         return (
