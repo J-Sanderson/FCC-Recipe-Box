@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import RecipeList from './RecipeList';
 
-import '../index.css'
+import '../css/App.css';
 
 class App extends Component {
 
@@ -26,7 +26,7 @@ class App extends Component {
       <main>
         <h1>Recipe Box</h1>
         <RecipeList recipes={this.state.recipes} />
-        <button id="add-recipe">
+        <button id="add-recipe" className="add-recipe">
             Add Recipe
         </button>
       </main>

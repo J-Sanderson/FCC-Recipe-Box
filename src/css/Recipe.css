@@ -1,0 +1,35 @@
+.recipe-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  border: 1px solid var(--nearwhite);
+  padding: 5px 5px 5px 20px;
+  font-family: 'Reenie Beanie', cursive;
+  background-color: var(--red);
+  color: var(--nearwhite);
+}
+
+.recipe-title h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.ingredients {
+  margin-top: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.ingredients li {
+  padding: 5px 20px;
+}
+
+.ingredients li:nth-child(even) {
+  background-color: var(--lightest);
+}
+
+.ingredients li:nth-child(odd) {
+  background-color: var(--lighter);
+}
