@@ -8,6 +8,13 @@ class Recipe extends Component {
         show: false,
     };
 
+    toggleDisplay = () => {
+        const show = this.state.show;
+        this.setState({
+            show: !show,
+        });
+    }
+
     render() {
         const ingredients = this.props.ingredients.map((ingredient, index) => {
             return (
@@ -21,7 +28,7 @@ class Recipe extends Component {
             <div className="recipe">
                 <div className="recipe-title">
                     <h2>{this.props.name}</h2>
-                    <button>Show</button>
+                    <button onClick={this.toggleDisplay}>Show</button>
                 </div>
                 <ul className="ingredients">{ingredients}</ul>
             </div>
