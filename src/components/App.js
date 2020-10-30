@@ -8,7 +8,15 @@ class App extends Component {
 
   state = {
     recipes: [],
+    showAdd: false,
   };
+
+  toggleAdd = () => {
+        const showAdd = this.state.showAdd;
+        this.setState({
+            showAdd: !showAdd,
+        });
+    }
 
   componentDidMount = () => {
     const defaults = [
@@ -26,7 +34,11 @@ class App extends Component {
       <main>
         <h1>Recipe Box</h1>
         <RecipeList recipes={this.state.recipes} />
-        <button id="add-recipe" className="add-recipe">
+        <button 
+          id="add-recipe" 
+          className="add-recipe"
+          onClick={this.toggleAdd}
+        >
             Add Recipe
         </button>
       </main>
