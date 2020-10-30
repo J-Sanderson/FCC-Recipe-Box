@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import AddRecipe from './AddRecipe';
 import RecipeList from './RecipeList';
 
 import '../css/App.css';
@@ -32,6 +33,9 @@ class App extends Component {
   render() {
     return (
       <main>
+        {
+          this.state.showAdd ? <AddRecipe /> : null
+        }
         <h1>Recipe Box</h1>
         <RecipeList recipes={this.state.recipes} />
         <button 
