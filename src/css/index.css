@@ -13,7 +13,7 @@ body {
   background-image: url('../assets/img/tablecloth-texture.gif');
 }
 
-button {
+button, input[type="submit"] {
   display: block;
   font-family: 'Reenie Beanie', cursive;
   background-color: var(--red);

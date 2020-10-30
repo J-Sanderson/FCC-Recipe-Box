@@ -19,3 +19,19 @@
     font-family: 'Reenie Beanie', cursive;
     text-align:center;
 }
+
+.add-recipe form > * {
+    display: block;
+    margin: 1rem 0;
+}
+
+.add-recipe form label input {
+    display: block;
+    width: 90%;
+    margin-top: 0.5rem;
+}
+
+.add-recipe form label input[type=text]:focus {
+      outline:none;
+      box-shadow: 0 0 5px var(--red);
+    }
