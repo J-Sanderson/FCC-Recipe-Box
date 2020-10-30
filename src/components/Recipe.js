@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import '../css/Recipe.css';
+
 class Recipe extends Component {
 
     state = {
@@ -17,7 +19,10 @@ class Recipe extends Component {
 
         return (
             <div className="recipe">
-                <h2 className="recipe-title">{this.props.name}</h2>
+                <div className="recipe-title">
+                    <h2>{this.props.name}</h2>
+                    <button>Show</button>
+                </div>
                 <ul className="ingredients">{ingredients}</ul>
             </div>
         );

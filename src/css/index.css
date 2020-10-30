@@ -1,0 +1,26 @@
+:root {
+  --nearwhite:#F5F1EB;
+  --red:#C92023;
+  --lighter: #F1AAAB;
+  --lightest: #F8D6D7;
+}
+
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #000000;
+  background-color: var(--red);
+  background-image: url('../assets/img/tablecloth-texture.gif');
+}
+
+button {
+  display: block;
+  font-family: 'Reenie Beanie', cursive;
+  background-color: var(--red);
+  color: var(--nearwhite);
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
